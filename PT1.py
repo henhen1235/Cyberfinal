@@ -1,8 +1,5 @@
 import base64
 
-from numpy import block, size
-
-
 #1
 def hexto64(input_hex):
     hex = input_hex
