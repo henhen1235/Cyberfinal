@@ -183,10 +183,10 @@ def repeating_XOR(inputs, key):
 # optimalkeyscore = 10000
 # bestkeysize = 0
 
-# def hamming_distance(input1, input2):
-#     xor = bytes(a ^ b for a, b in zip(input1, input2))
-#     distance = sum(bin(byte).count('1') for byte in xor)
-#     return distance
+def hamming_distance(input1, input2):
+    xor = bytes(a ^ b for a, b in zip(input1, input2))
+    distance = sum(bin(byte).count('1') for byte in xor)
+    return distance
 
 # options = []
 
@@ -215,18 +215,18 @@ def repeating_XOR(inputs, key):
 #     block1.append(block2)
 
 
-# def XOR_single(input1, input2):
-#     # first = bytes.fromhex(input1)
-#     # second = bytes.fromhex(input2)
-#     xor = bytes(a ^ b for a, b in zip(input1, input2))
-#     return xor.decode('ascii', errors='ignore')
+def XOR_single(input1, input2):
+    # first = bytes.fromhex(input1)
+    # second = bytes.fromhex(input2)
+    xor = bytes(a ^ b for a, b in zip(input1, input2))
+    return xor.decode('ascii', errors='ignore')
 
-# def score(results):
-#     score = 0
-#     for c in results:
-#         if c in 'ETAOIN SHRDLUetaoinshrdlu':
-#             score += 1
-#     return score
+def score(results):
+    score = 0
+    for c in results:
+        if c in 'ETAOIN SHRDLUetaoinshrdlu':
+            score += 1
+    return score
 
 # keys = list(range(256))
 # finalkey = ""
